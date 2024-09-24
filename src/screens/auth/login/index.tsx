@@ -19,12 +19,25 @@ export const LoginScreen = () => {
                 styleContainer={{
                     backgroundColor: colors.WHITE,
                     position: "absolute",
-                    bottom: 500,
+                    bottom: 480,
                     width: 100, 
                     height: 40
                 }}
                 styleText={{
                     color: colors.PRIMARY
+                }}
+            />
+            <ButtonCustom
+                titleButton="esqueci minha senha"
+                styleContainer={{
+                    backgroundColor: colors.WHITE,
+                    position: "absolute",
+                    bottom: 540,
+                    width: 400, 
+                    height: 40
+                }}
+                styleText={{
+                    color: colors.BLACK
                 }}
             />
         </View>
