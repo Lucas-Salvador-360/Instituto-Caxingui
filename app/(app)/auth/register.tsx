@@ -3,7 +3,7 @@ import { colors } from "@/src/utils/colors";
 import { Stack } from "expo-router";
 
 
-export default function Login () {
+export default function Register () {
     return(
         <>
             <Stack.Screen

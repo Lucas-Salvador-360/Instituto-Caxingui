@@ -19,7 +19,7 @@ export const RegisterScreen = () => {
                 styleContainer={{
                     backgroundColor: colors.WHITE,
                     position: "absolute",
-                    bottom: 400,
+                    bottom: 300,
                     width: 100, 
                     height: 40
                 }}

@@ -10,6 +10,8 @@ export const styles = StyleSheet.create({
         height: 50,
         justifyContent: "flex-start",
         alignItems: "center",
+        paddingHorizontal: 24,
+        paddingTop: 12,
         backgroundColor: colors.PRIMARY
     },
     title: {
