@@ -2,7 +2,7 @@ import { TouchableOpacity, View, Text, StyleProp, ViewStyle, TextStyle } from "r
 import { style } from "./styles"
 
 interface IProps {
-    titleButton: string,
+    titleButton: string, 
     styleContainer?: StyleProp<ViewStyle>,
     styleText?: StyleProp<TextStyle>,
     handleClick: () => void
