@@ -10,8 +10,7 @@ export const styles = StyleSheet.create({
         flexDirection:"column",
         justifyContent: "center",
         alignItems: "center",
-        position: "absolute",
-        bottom: 600
+        marginTop: 12
 
     },
     title: {

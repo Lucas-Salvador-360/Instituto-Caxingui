@@ -1,28 +1,25 @@
 import { Text, TextInput, View } from "react-native"
 import { styles } from "./styles"
 
+interface IProps {
+    title: string;
+    setText: (value: string) => void;
+}
 
+export const InputWithTitle = ({setText, title}: IProps) => {
 
-export const InputWithTitle = () =>{
     return(
         <View
-        style={styles.container}
+            style={styles.container}
         >
             <Text
                 style={styles.title}
             >
-                E-MAIL
+                {title}
             </Text>
             <TextInput
                 style={styles.styleInput}
-            />
-             <Text
-                style={styles.title}
-            >
-                SENHA
-            </Text>
-            <TextInput
-                style={styles.styleInput}
+                onChangeText={setText}
             />
         </View>
     )

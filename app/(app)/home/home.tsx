@@ -1,9 +1,9 @@
-import { LoginScreen } from "@/src/screens/auth/login";
+import { HomeScreen } from "@/src/screens/home/";
 import { colors } from "@/src/utils/colors";
 import { Stack } from "expo-router";
 
 
-export default function Login () {
+export default function lOGIN () {
     return(
         
         <>
@@ -11,7 +11,7 @@ export default function Login () {
             <Stack.Screen
                 options={{
                     headerShown: true,
-                    headerTitle: "LOGIN",
+                    headerTitle: "HOME",
                     headerTitleStyle: {
                         fontSize: 30
                     },
@@ -22,7 +22,7 @@ export default function Login () {
                     headerTitleAlign: "center"
                 }}
             />
-            <LoginScreen/>
+            <HomeScreen/>
         </>
     )
 }
