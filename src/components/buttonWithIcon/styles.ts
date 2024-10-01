@@ -13,11 +13,11 @@ export const style = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
     },
     title: {
         fontSize: 24,
         fontWeight: "bold",
-        textAlign: "center"
+        textAlign: "center",
     }
 })

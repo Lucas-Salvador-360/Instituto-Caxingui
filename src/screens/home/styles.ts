@@ -23,10 +23,4 @@ export const styles = StyleSheet.create ({
         position: "absolute",
         bottom: 450
     },
-    Image: {
-        height: 400,
-        width: 400,
-        position: "absolute",
-        bottom: 440
-      }
 })

@@ -18,7 +18,7 @@ export const ButtonWithIcon =({
         return(
                 <TouchableOpacity 
                 onPress={handleClick}
-                style={[style.button, styleContainer]}>
+                style={[style.button, styleContainer, ]}>
                      <Text style={[style.title, styleText]}>
                         {titleButton}
                      </Text>

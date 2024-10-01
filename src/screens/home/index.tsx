@@ -7,28 +7,64 @@ import { ButtonWithIcon } from "@/src/components/buttonWithIcon";
 export const HomeScreen = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.Title}>
+            <Text 
+            style={styles.Title}>
             </Text>
             <ButtonWithIcon
                 titleButton={
-                    <>
-                        <FontAwesome5 name="users" size={24} color="#5e17eb" />
-                        YOUR CLASS
-                    </>
+                    <View style={{ 
+                        alignItems: 'center'
+                         }}>
+                        <FontAwesome5 name="users" size={80} color="#5e17eb" />
+                        <Text style={{ 
+                            color: colors.PRIMARY, 
+                            fontSize: 30, 
+                            fontWeight: "bold",
+                            }}>
+                                YOUR CLASS
+                            </Text>
+                    </View>
                 }
                 styleContainer={{
-                    flexDirection: 'column',
                     backgroundColor: colors.WHITE,
                     position: "absolute",
-                    bottom: 300,
+                    bottom: 350,
                     width: 250,
                     height: 200,
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                 }}
                 styleText={{
-                    color: colors.PRIMARY
+                    color: colors.PRIMARY,
+                }} 
+            /> 
+            <ButtonWithIcon
+                titleButton={
+                    <View style={{ 
+                        alignItems: 'center'
+                         }}>
+                        <FontAwesome5 name="book-open" size={80} color="#5e17eb" />
+                        <Text style={{ 
+                            color: colors.PRIMARY, 
+                            fontSize: 30, 
+                            fontWeight: "bold",
+                            }}>
+                                YOUR CLASS
+                            </Text>
+                    </View>
+                }
+                styleContainer={{
+                    backgroundColor: colors.WHITE,
+                    position: "absolute",
+                    bottom: 100,
+                    width: 250,
+                    height: 200,
+                    alignItems: "center",
+                    justifyContent: "center",
                 }}
+                styleText={{
+                    color: colors.PRIMARY,
+                }} 
             />
         </View>
     );
