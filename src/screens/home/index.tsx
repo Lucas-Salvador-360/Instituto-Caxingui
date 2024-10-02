@@ -11,20 +11,7 @@ export const HomeScreen = () => {
             style={styles.Title}>
             </Text>
             <ButtonWithIcon
-                titleButton={
-                    <View style={{ 
-                        alignItems: 'center'
-                         }}>
-                        <FontAwesome5 name="users" size={80} color="#5e17eb" />
-                        <Text style={{ 
-                            color: colors.PRIMARY, 
-                            fontSize: 30, 
-                            fontWeight: "bold",
-                            }}>
-                                YOUR CLASS
-                            </Text>
-                    </View>
-                }
+                titleButton={"YOUR CLASS"}
                 styleContainer={{
                     backgroundColor: colors.WHITE,
                     position: "absolute",
@@ -37,21 +24,11 @@ export const HomeScreen = () => {
                 styleText={{
                     color: colors.PRIMARY,
                 }} 
+                Icon={() => <FontAwesome5 name="users" size={80} color="#5e17eb" />}
             /> 
             <ButtonWithIcon
                 titleButton={
-                    <View style={{ 
-                        alignItems: 'center'
-                         }}>
-                        <FontAwesome5 name="book-open" size={80} color="#5e17eb" />
-                        <Text style={{ 
-                            color: colors.PRIMARY, 
-                            fontSize: 30, 
-                            fontWeight: "bold",
-                            }}>
-                                YOUR CLASS
-                            </Text>
-                    </View>
+                   "YOUR STUDY MANUAL" 
                 }
                 styleContainer={{
                     backgroundColor: colors.WHITE,
@@ -63,8 +40,12 @@ export const HomeScreen = () => {
                     justifyContent: "center",
                 }}
                 styleText={{
-                    color: colors.PRIMARY,
+                    color: colors.PRIMARY, 
+                    fontSize: 30,
+                    width: "100%",
+                    fontWeight: "bold",
                 }} 
+                Icon={() => <FontAwesome5 name="book-open" size={80} color="#5e17eb" />}
             />
         </View>
     );

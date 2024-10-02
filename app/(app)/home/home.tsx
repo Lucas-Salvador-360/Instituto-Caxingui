@@ -1,6 +1,7 @@
 import { HomeScreen } from "@/src/screens/home/";
 import { colors } from "@/src/utils/colors";
 import { Stack } from "expo-router";
+import { View } from "react-native";
 
 
 export default function lOGIN () {
@@ -19,7 +20,7 @@ export default function lOGIN () {
                     headerStyle: {
                         backgroundColor: colors.PRIMARY,
                     },
-                    headerTitleAlign: "center"
+                    headerTitleAlign: "center",
                 }}
             />
             <HomeScreen/>
