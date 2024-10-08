@@ -47,8 +47,8 @@ export const HomeScreen = () => {
                             fontSize: 30,
                             marginTop: 12,
                             fontWeight: "bold",
-                            textAlign: 'center'
-                            }}>YOUR STUDY MANUAL
+                            textAlign: 'center',
+                            }}>YOUR STUDY {'\n'}MANUAL
                         </Text>
                     </View>
                 }

@@ -5,7 +5,7 @@ import { Api } from "@/src/server/api";
 
 export interface ManualProps {
     id: string;
-    name: string;
+    nome: string;
     foto: string;
 }
 

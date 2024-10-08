@@ -1,16 +1,17 @@
+import Header from "@/src/components/header";
 import { HomeScreen } from "@/src/screens/home/";
 import { colors } from "@/src/utils/colors";
 import { Stack } from "expo-router";
+import Entypo from '@expo/vector-icons/Entypo';
 
 
 export default function Home () {
     return(
         
         <>
-            
             <Stack.Screen
                 options={{
-                    headerShown: true,
+                    headerShown: false,
                     headerTitle: "HOME",
                     headerTitleStyle: {
                         fontSize: 30
@@ -19,9 +20,12 @@ export default function Home () {
                     headerStyle: {
                         backgroundColor: colors.PRIMARY,
                     },
-                    headerTitleAlign: "center"
+                    headerTitleAlign: "center",
+                    
                 }}
+                
             />
+            <Header/>
             <HomeScreen/>
         </>
     )

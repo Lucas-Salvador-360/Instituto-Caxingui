@@ -9,19 +9,21 @@ export const styles = StyleSheet.create ({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: colors.WHITE,
+        backgroundColor: 'rgba(255, 255, 255, 0)',
         width: "100%"
     },
     Title: {
         fontFamily: 'Nunito',
-        fontSize: 30,
+        fontSize: 18,
         fontWeight: "bold",
-        justifyContent: 'center',
         alignItems: 'center',
-        color: colors.PRIMARY,
+        color: colors.BLACK,
         marginBottom: 24,
-        position: "absolute",
-        bottom: 450
+        height: 65,
+        width: 300,
+        textAlign: 'center',
+        marginHorizontal: 10,
+        marginVertical: 30,
     },
     Image: {
         width: 200,
