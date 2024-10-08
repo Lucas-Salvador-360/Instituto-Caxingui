@@ -4,6 +4,7 @@ import { Text, View } from "react-native"
 import {styles} from "./styles"
 import { InputWithTitle } from "@/src/components/inputWithTitle"
 import { useState } from "react"
+import { router } from "expo-router"
 
 export const RegisterScreen = () => {
     const [nome, setNome] = useState("")
@@ -45,6 +46,7 @@ export const RegisterScreen = () => {
                 styleText={{
                     color: colors.PRIMARY
                 }}
+                handleClick={() => router.navigate("/(app)/auth/login")}
             />
         </View>
     )

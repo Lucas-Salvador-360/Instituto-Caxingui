@@ -20,13 +20,13 @@ export const style = StyleSheet.create({
       color: colors.WHITE,
       marginBottom: 24,
       position: "absolute",
-      bottom: 450
+      bottom: 400
     },
     styleImage: {
       height: 400,
       width: 400,
       position: "absolute",
-      bottom: 440
+      bottom: 360
     }
 })
   

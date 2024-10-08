@@ -16,8 +16,9 @@ export const style = StyleSheet.create({
         justifyContent: "center"
     },
     title: {
-        fontSize: 24,
-        fontWeight: "bold",
-        textAlign: "center"
+        color: colors.PRIMARY,
+        fontSize: 30,
+        marginTop: 12,
+        fontWeight: "bold"
     }
 })

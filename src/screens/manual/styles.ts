@@ -9,7 +9,7 @@ export const styles = StyleSheet.create ({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: colors.PRIMARY,
+        backgroundColor: colors.WHITE,
         width: "100%"
     },
     Title: {
@@ -18,9 +18,14 @@ export const styles = StyleSheet.create ({
         fontWeight: "bold",
         justifyContent: 'center',
         alignItems: 'center',
-        color: colors.WHITE,
+        color: colors.PRIMARY,
         marginBottom: 24,
         position: "absolute",
         bottom: 450
+    },
+    Image: {
+        width: 200,
+        height: 300,
+        borderRadius: 20
     }
 })
