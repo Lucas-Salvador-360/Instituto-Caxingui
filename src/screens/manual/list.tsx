@@ -16,7 +16,7 @@ export function ManualScreen() {
     useEffect(() => {
         async function getManual() {
             try {
-                const response = await Api.get("/login/home/manuais");
+                const response = await Api.get("/auth/login/home/manuais");
                 setManual(response.data); 
             } catch (err) {
                 console.error(err);

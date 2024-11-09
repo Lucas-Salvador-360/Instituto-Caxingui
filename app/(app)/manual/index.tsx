@@ -26,13 +26,15 @@ export default function Manual () {
             <View
           style={{
             marginTop: StatusBarHeight + 8,
-            width: '100%',         
+            width: '100%',
+            height: '100%',         
             paddingHorizontal: 16,
-            backgroundColor: colors.WHITE
+            backgroundColor: colors.WHITE,
           }}
         >  
+        <ManualScreen/>
         </View>
-            <ManualScreen/>
+           
         </>
     )
 }

@@ -5,10 +5,32 @@ import {styles} from "./styles"
 import { InputWithTitle } from "@/src/components/inputWithTitle"
 import { useState } from "react"
 import { router } from "expo-router"
+import { loginApi } from "@/src/server/api"
+import { storeToken, getToken } from "@/src/utils/AsyncStorage/loginStorage"
 
 export const LoginScreen = () => {
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")
+
+
+    const handleLogin = async () => {
+        const payload = { email, password: senha }
+        try {
+          const response = await loginApi(payload);
+          
+          if (response && response.status === 200) {
+            await storeToken(response.data.token);
+            console.log("SUCESSO@@@@@@@@@@@@@@@@");
+            router.push("/home/home");
+          } else {
+            console.log("Falha no login. Tente novamente.");
+          }
+        } catch (error) {
+            console.log("Erro na comunicação com o servidor.");
+          console.log("Erro:", error);
+        }
+      }
+
     return(
         <View
             style={styles.container}
@@ -36,7 +58,7 @@ export const LoginScreen = () => {
                 styleText={{
                     color: colors.PRIMARY
                 }}
-                handleClick={() => router.navigate("/(app)/home/home")}
+                handleClick={handleLogin}
             />
             <ButtonCustom
                 titleButton="esqueci minha senha"
